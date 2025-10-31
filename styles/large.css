@@ -1,0 +1,51 @@
+
+@media (min-width: 768px) {
+  
+
+  .hamburger {
+    display: none;
+  }
+  
+
+  #primaryNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #primaryNav li {
+    border-bottom: none;
+  }
+  
+  #primaryNav a {
+    padding: 1rem 1.5rem;
+  }
+  
+  
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .about-content img {
+    max-width: 300px;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  
+  .course-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  .course-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

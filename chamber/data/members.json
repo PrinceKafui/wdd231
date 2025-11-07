@@ -1,0 +1,93 @@
+[
+    {
+        "name": "Manuel-Johnson Hardware",
+        "address": "Teiman - Borga town, Ghana",
+        "phone": "+233 55 735 9204",
+        "email": "nfo@manueljohnson.com",
+        "website": "https://manueljohnsongh.com/",
+        "image": "https://placehold.co/400x300/1a365d/white?text=Hardware",
+        "membershipLevel": 3,
+        "description": "Building Hardware Retail and Supply"
+    },
+    {
+        "name": "CalBank Ghana",
+        "address": "RING ROAD CENTRAL. 989,Accra-Ghana",
+        "phone": "+233 302 680 063",
+        "email": "customercare@calbank.net",
+        "website": "https://calbank.net/",
+        "image": "https://placehold.co/400x300/2b6cb0/white?text=Bank",
+        "membershipLevel": 3,
+        "description": "Better bank that rewards you everyday"
+    },
+    {
+        "name": "Capitol Cafe",
+        "address": "5th Circular Rd. 19Cantonments Accra – Ghana",
+        "phone": "+233 553 975 553",
+        "email": "info@capitolgh.com",
+        "website": "https://capitolgh.com/",
+        "image": "https://placehold.co/400x300/ed8936/white?text=Cafe",
+        "membershipLevel": 2,
+        "description": "Traditional dishes with highest quality"
+    },
+    {
+        "name": "the SOFTtribe.",
+        "address": "8th floor Horizons Offices Number 1 Airport",
+        "phone": "+233 546 913 843",
+        "email": "info@softtribe.com",
+        "website": "https://softtribe.com/",
+        "image": "https://placehold.co/400x300/2d3748/white?text=Tech",
+        "membershipLevel": 3,
+        "description": "IT services and innovation"
+    },
+    {
+        "name": "Bentsi-Entsill Letsa & Ankomah",
+        "address": "4 Momotse Ave, Accra",
+        "phone": "+233 302 208 888",
+        "email": "info@bentsienchill.com",
+        "website": "https://bentsienchill.com/",
+        "image": "https://placehold.co/400x300/4a5568/white?text=Law",
+        "membershipLevel": 3,
+        "description": "Experienced attorneys serving the community"
+    },
+    {
+        "name": "Family Health Hospital",
+        "address": "Opposite Kofi Annan International Peace Keeping Training Centre.",
+        "phone": "+233 553 017 368",
+        "email": "info@fhu.edu.gh",
+        "website": "https://fhu.edu.gh/hospital/",
+        "image": "https://placehold.co/400x300/38a169/white?text=Health",
+        "membershipLevel": 2,
+        "description": "A 24 hour private hospital uniquely located"
+    },
+    {
+        "name": "Eden Heights",
+        "address": "Eden Heights Residence, Accra.",
+        "phone": "+233 50 153 1444",
+        "email": "sales@edenheights.com.gh",
+        "website": "https://edenheights.com.gh/",
+        "image": "https://placehold.co/400x300/ed8936/white?text=Real+Estate",
+        "membershipLevel": 2,
+        "description": "The height of modern living"
+    },
+    {
+        "name": "Devtraco Limited",
+        "address": "2nd Plot after Coca Cola Factory,Spintex Road.",
+        "phone": "+233 24 340 0300",
+        "email": "marketing@devtraco.com",
+        "website": "https://devtraco.com/",
+        "image": "https://placehold.co/400x300/ed8936/white?text=Real+Estate",
+        "membershipLevel": 1,
+        "description": "Welcome to Devtraco living"
+    },
+    {
+        "name": "Lakeside Estate",
+        "address": "7th Floor, Silver Star Towers, Airport City Accra Ghana",
+        "phone": "+233 302 775 043",
+        "email": "info@lakesideestate.com",
+        "website": "https://lakesideestate.com/",
+        "image": "https://placehold.co/400x300/ed8936/white?text=Real+Estate",
+        "membershipLevel": 3,
+        "description": "The joys of luxury living redefined"
+    }
+    
+]

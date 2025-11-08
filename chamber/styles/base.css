@@ -1,4 +1,3 @@
-/* CSS Variables */
 :root {
     --primary-color: #1a365d;
     --secondary-color: #2b6cb0;
@@ -13,7 +12,6 @@
     --transition: all 0.3s ease;
 }
 
-/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +19,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--light-color);
@@ -32,6 +30,12 @@ a {
     color: var(--secondary-color);
     transition: var(--transition);
 }
+
+
+h1, h2, h3, h4, h5, h6, .logo h1, nav a {
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 a:hover {
     color: var(--primary-color);
@@ -49,7 +53,6 @@ img {
     padding: 0 1rem;
 }
 
-/* Header Styles */
 header {
     background-color: var(--primary-color);
     color: white;
@@ -78,7 +81,6 @@ header {
    font-weight: 400;
 }
 
-/* Navigation */
 nav ul {
     display: flex;
     list-style: none;
@@ -107,7 +109,6 @@ nav a.active {
     padding: 0.5rem;
 }
 
-/* Main Content */
 main {
     padding: 2rem 0;
     min-height: calc(100vh - 200px);
@@ -120,7 +121,6 @@ main {
     font-size: 2.5rem;
 }
 
-/* View Toggle */
 .view-toggle {
     display: flex;
     justify-content: flex-end;
@@ -148,7 +148,6 @@ main {
     border-color: var(--secondary-color);
 }
 
-/* Directory Styles */
 .directory-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -241,7 +240,6 @@ main {
     color: white;
 }
 
-/* List View Styles */
 .directory-list .member-item {
     display: grid;
     grid-template-columns: 100px 2fr 1fr;
@@ -273,7 +271,6 @@ main {
     text-align: right;
 }
 
-/* Footer */
 footer {
     background-color: var(--dark-color);
     color: white;
@@ -313,7 +310,6 @@ footer {
     color: #a0aec0;
 }
 
-/* Loading State */
 .loading {
     text-align: center;
     padding: 2rem;
@@ -321,7 +317,6 @@ footer {
     color: var(--text-light);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .hamburger {
         display: block;

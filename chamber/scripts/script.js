@@ -1,4 +1,3 @@
-// Global variables
 let membersData = [];
 let currentView = 'grid';
 
@@ -11,26 +10,20 @@ const navMenu = document.getElementById('nav-menu');
 const currentYear = document.getElementById('current-year');
 const lastModified = document.getElementById('last-modified');
 
-// Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
     initializePage();
 });
 
 async function initializePage() {
-    // Load member data
     await loadMemberData();
     
-    // Display members in grid view by default
     displayMembers(currentView);
     
-    // Set up event listeners
     setupEventListeners();
     
-    // Set footer information
     setFooterInfo();
 }
 
-// Load member data from JSON
 async function loadMemberData() {
     try {
         const response = await fetch('data/members.json');
@@ -44,38 +37,29 @@ async function loadMemberData() {
     }
 }
 
-// Set up all event listeners
 function setupEventListeners() {
-    // View toggle functionality
     gridViewBtn.addEventListener('click', () => switchView('grid'));
     listViewBtn.addEventListener('click', () => switchView('list'));
     
-    // Mobile menu toggle
     hamburger.addEventListener('click', toggleMobileMenu);
     
-    // Close mobile menu when clicking outside
     document.addEventListener('click', closeMobileMenuOnClickOutside);
     
-    // Close mobile menu when clicking on a link
     const navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(link => {
         link.addEventListener('click', closeMobileMenu);
     });
 }
 
-// Switch between grid and list views
 function switchView(viewType) {
     currentView = viewType;
     
-    // Update active button state
     gridViewBtn.classList.toggle('active', viewType === 'grid');
     listViewBtn.classList.toggle('active', viewType === 'list');
     
-    // Display members in the selected view
     displayMembers(viewType);
 }
 
-// Display members in the specified view
 function displayMembers(viewType) {
     if (membersData.length === 0) {
         directoryContainer.innerHTML = '<div class="loading">Loading member data...</div>';
@@ -91,7 +75,6 @@ function displayMembers(viewType) {
     }
 }
 
-// Display members in grid view
 function displayGridView() {
     directoryContainer.className = 'directory-grid';
     
@@ -101,7 +84,6 @@ function displayGridView() {
     });
 }
 
-// Display members in list view
 function displayListView() {
     directoryContainer.className = 'directory-list';
     
@@ -111,7 +93,6 @@ function displayListView() {
     });
 }
 
-// Create a member card for grid view
 function createMemberCard(member) {
     const card = document.createElement('div');
     card.className = 'member-card';
@@ -135,7 +116,6 @@ function createMemberCard(member) {
     return card;
 }
 
-// Create a member list item for list view
 function createMemberListItem(member) {
     const item = document.createElement('div');
     item.className = 'member-item';

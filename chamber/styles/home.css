@@ -1,0 +1,721 @@
+/* CSS Variables */
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2b6cb0;
+    --accent-color: #ed8936;
+    --light-color: #f7fafc;
+    --dark-color: #2d3748;
+    --success-color: #38a169;
+    --text-color: #2d3748;
+    --text-light: #718096;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+h1, h2, h3, h4, h5, h6, .logo h1, nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+}
+
+nav a:hover,
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0.5rem;
+}
+
+.hamburger:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+}
+
+/* Main Content */
+main {
+    padding: 2rem 0;
+    min-height: calc(100vh - 200px);
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+/* Hero Section */
+.hero {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.hero-image {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.5rem 2rem;
+    margin-top: 1.2rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.cta-button:hover {
+    background-color: #d17a2d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Events Section */
+.events {
+    margin-bottom: 2.5rem;
+}
+
+.events h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.event-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.event-date {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Weather Section */
+.weather {
+    margin-bottom: 3rem;
+}
+
+.weather h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.weather-container {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.weather-current {
+    text-align: center;
+    padding: 1rem;
+}
+
+.weather-header h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.weather-location {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-details {
+    text-align: left;
+}
+
+.weather-temp {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+    line-height: 1;
+}
+
+.weather-desc {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    text-transform: capitalize;
+    margin: 0.5rem 0 0 0;
+}
+
+.weather-extra {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.forecast-header h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.forecast-day {
+    text-align: center;
+    padding: 1rem;
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.forecast-day:hover {
+    background: #e2e8f0;
+    transform: translateY(-2px);
+}
+
+.forecast-date {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.forecast-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem auto;
+}
+
+.forecast-temp {
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.forecast-desc {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-transform: capitalize;
+}
+
+.weather-error {
+    text-align: center;
+    color: #e53e3e;
+}
+
+.error-detail {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/* Spotlights Section */
+.spotlights {
+    margin-bottom: 3rem;
+}
+
+.spotlights h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.spotlight-card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.spotlight-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.spotlight-card:hover .spotlight-image img {
+    transform: scale(1.05);
+}
+
+.spotlight-info {
+    padding: 1.5rem;
+}
+
+.spotlight-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.spotlight-description {
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.spotlight-address, .spotlight-phone {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.spotlight-website {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.spotlight-website:hover {
+    text-decoration: underline;
+}
+
+.membership-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.membership-1 {
+    background-color: #e2e8f0;
+    color: var(--text-color);
+}
+
+.membership-2 {
+    background-color: #cbd5e0;
+    color: var(--text-color);
+}
+
+.membership-3 {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    grid-column: 1 / -1;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.footer-section p, .footer-section a {
+    color: #cbd5e0;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #4a5568;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #a0aec0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .weather-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .weather-current {
+        border-right: none;
+        border-bottom: 1px solid var(--text-light);
+        padding-bottom: 2rem;
+    }
+    
+    .forecast-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .weather-main {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .weather-details {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .events-grid,
+    .spotlight-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .forecast-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .forecast-day {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        align-items: center;
+        text-align: left;
+        gap: 0.5rem;
+    }
+    
+    .forecast-icon {
+        margin: 0;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .weather-extra {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .forecast-day {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 0.25rem;
+    }
+    
+    .forecast-desc {
+        grid-column: 1 / -1;
+        margin-top: 0.5rem;
+    }
+}
+
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #3498db;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        z-index: 1001;
+        margin-left: 10rem;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #1a365d;
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    .hamburger.active {
+        position: relative;
+        z-index: 1002;
+    }
+}

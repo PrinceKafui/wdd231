@@ -1,4 +1,3 @@
-
 html {
   line-height: 1.15; 
   -webkit-text-size-adjust: 100%; 
@@ -9,9 +8,11 @@ body {
   margin: 0;
 }
 
+
 main {
   display: block;
 }
+
 
 
 h1 {
@@ -21,16 +22,16 @@ h1 {
 
 
 hr {
-  box-sizing: content-box;
+  box-sizing: content-box; 
   height: 0; 
   overflow: visible; 
 }
 
-
 pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
+  font-family: monospace, monospace; 
+  font-size: 1em; 
 }
+
 
 
 a {
@@ -38,12 +39,12 @@ a {
 }
 
 
+
 abbr[title] {
-  border-bottom: none;
+  border-bottom: none; 
   text-decoration: underline; 
   text-decoration: underline dotted; 
 }
-
 
 
 b,
@@ -51,12 +52,14 @@ strong {
   font-weight: bolder;
 }
 
+
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
+  font-family: monospace, monospace; 
+  font-size: 1em; 
 }
+
 
 
 small {
@@ -81,9 +84,11 @@ sup {
 }
 
 
+
 img {
   border-style: none;
 }
+
 
 
 button,
@@ -98,10 +103,12 @@ textarea {
 }
 
 
+
 button,
 input { 
   overflow: visible;
 }
+
 
 
 button,
@@ -118,6 +125,7 @@ button,
 }
 
 
+
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -125,6 +133,7 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0;
 }
+
 
 
 button:-moz-focusring,
@@ -135,19 +144,22 @@ button:-moz-focusring,
 }
 
 
+
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
 
+
 legend {
   box-sizing: border-box; 
   color: inherit; 
-  display: table;
+  display: table; 
   max-width: 100%; 
   padding: 0; 
-  white-space: normal; 
+  white-space: normal;
 }
+
 
 
 progress {
@@ -155,16 +167,19 @@ progress {
 }
 
 
+
 textarea {
   overflow: auto;
 }
 
 
+
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box; 
-  padding: 0;
+  padding: 0; 
 }
+
 
 
 [type="number"]::-webkit-inner-spin-button,
@@ -191,7 +206,6 @@ textarea {
 }
 
 
-
 details {
   display: block;
 }
@@ -201,6 +215,7 @@ details {
 summary {
   display: list-item;
 }
+
 
 
 template {

@@ -177,3 +177,7 @@ function setFooterInfo() {
     currentYear.textContent = new Date().getFullYear();
     lastModified.textContent = document.lastModified;
 }
+
+
+
+

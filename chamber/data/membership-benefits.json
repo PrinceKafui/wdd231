@@ -1,0 +1,90 @@
+{
+  "np": {
+    "title": "NP Membership",
+    "price": "No Fee",
+    "description": "For non-profit organizations",
+    "features": [
+      "Basic directory listing",
+      "Monthly newsletter",
+      "Access to member events",
+      "Business networking opportunities",
+      "Community recognition"
+    ],
+    "benefits": [
+      "Free basic directory listing on our website",
+      "Monthly digital newsletter with community updates",
+      "Invitations to member-only networking events",
+      "Access to community business forums",
+      "Non-profit recognition in chamber publications",
+      "Volunteer opportunity listings",
+      "Community service project participation",
+      "Annual non-profit showcase event"
+    ]
+  },
+  "bronze": {
+    "title": "Bronze Membership",
+    "price": "$200/year",
+    "description": "Essential business benefits",
+    "features": [
+      "Enhanced directory listing",
+      "Business training workshops",
+      "Event discounts",
+      "Social media mentions",
+      "Newsletter features"
+    ],
+    "benefits": [
+      "Enhanced business directory listing with logo",
+      "2 free tickets to business training workshops annually",
+      "10% discount on chamber event tickets",
+      "Monthly social media feature on chamber platforms",
+      "Quarterly newsletter business spotlight",
+      "Access to business resource library",
+      "Member-to-member discount program",
+      "Business referral network access"
+    ]
+  },
+  "silver": {
+    "title": "Silver Membership",
+    "price": "$400/year",
+    "description": "Enhanced visibility and opportunities",
+    "features": [
+      "Premium directory listing",
+      "Spotlight advertising",
+      "Training program access",
+      "Event sponsorship opportunities",
+      "Dedicated support"
+    ],
+    "benefits": [
+      "Premium directory listing with featured placement",
+      "Home page spotlight advertising (2 weeks per year)",
+      "Access to all chamber training programs",
+      "Priority event sponsorship opportunities",
+      "Dedicated member support representative",
+      "25% discount on chamber event tickets",
+      "Business workshop hosting opportunities",
+      "Annual business achievement recognition"
+    ]
+  },
+  "gold": {
+    "title": "Gold Membership",
+    "price": "$600/year",
+    "description": "Maximum exposure and influence",
+    "features": [
+      "Featured directory placement",
+      "Home page spotlight priority",
+      "Executive networking events",
+      "Major event sponsorships",
+      "Strategic leadership opportunities"
+    ],
+    "benefits": [
+      "Featured placement in business directory",
+      "Priority home page spotlight (1 month per year)",
+      "Invitation to exclusive executive networking events",
+      "First right of refusal for major event sponsorships",
+      "Strategic planning committee participation",
+      "50% discount on all chamber events",
+      "Dedicated business development consultation",
+      "Leadership opportunities in chamber committees"
+    ]
+  }
+}

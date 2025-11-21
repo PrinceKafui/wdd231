@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <title>Chamber of Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Chamber of Commerce - Promoting local businesses and community growth">
+    <meta name="author" content="Prince Amexo">
+    <meta property="og:title" content="Chamber of Commerce - Home">
+    <meta property="og:description" content="Welcome to the Chamber of Commerce - Promoting local businesses and community growth">
+    <meta property="og:image" content="https://placehold.co/1200x630/1a365d/white?text=Chamber+Home">
+    <meta property="og:url" content="https://princekafui.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalizech.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/thankyou.js" defer ></script>
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="white" stroke-width="4"/>
+                    <path d="M12 20 L18 14 L28 26 L22 32 L12 20Z" fill="#3498db"/>
+                    <circle cx="20" cy="20" r="6" fill="#e74c3c"/>
+                </svg>
+                <h1>Chamber of Commerce</h1>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Navigation menu">☰</button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   
+    <main class="container">
+        <h1 class="page-title">Join Our Chamber</h1>
+        <p class="page-subtitle">Become a member and unlock opportunities for growth and networking</p>
+        
+        <div class="join-container">
+           
+            <section class="form-section">
+                <h2>Membership Application</h2>
+                <form id="membership-form" method="get" action="thankyou.html" class="membership-form">
+                   
+                    <fieldset class="form-fieldset">
+                        <legend>Personal Information</legend>
+                        
+                        <label class="form-label">
+                            First Name *
+                            <input type="text" 
+                                   name="firstName" 
+                                   id="firstName"
+                                   required 
+                                   autocomplete="given-name" 
+                                   title="Enter your first name"
+                                   class="form-input">
+                        </label>
+                        
+                        <label class="form-label">
+                            Last Name *
+                            <input type="text" 
+                                   name="lastName" 
+                                   id="lastName"
+                                   required 
+                                   autocomplete="family-name" 
+                                   title="Enter your last name"
+                                   class="form-input">
+                        </label>
+                        
+                        <label class="form-label">
+                            Organizational Title
+                            <input type="text" 
+                                   name="orgTitle" 
+                                   id="orgTitle"
+                                   autocomplete="organization-title" 
+                                   title="Enter your organizational title"
+                                   pattern="[A-Za-z\s\-]{7,}"
+                                   placeholder="e.g., Chief Executive Officer"
+                                   class="form-input">
+                            <small class="form-hint">Minimum 7 characters, letters, spaces, and hyphens only</small>
+                        </label>
+                    </fieldset>
+
+                   
+                    <fieldset class="form-fieldset">
+                        <legend>Contact Information</legend>
+                        
+                        <label class="form-label">
+                            Email Address *
+                            <input type="email" 
+                                   name="email" 
+                                   id="email"
+                                   required 
+                                   autocomplete="email" 
+                                   title="Enter your email address"
+                                   placeholder="yourname@company.com"
+                                   class="form-input">
+                        </label>
+                        
+                        <label class="form-label">
+                            Mobile Phone *
+                            <input type="tel" 
+                                   name="phone" 
+                                   id="phone"
+                                   required 
+                                   autocomplete="tel" 
+                                   title="Enter your mobile phone number"
+                                   placeholder="+233 XX XXX XXXX"
+                                   class="form-input">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="form-fieldset">
+                        <legend>Business Information</legend>
+                        
+                        <label class="form-label">
+                            Business/Organization Name *
+                            <input type="text" 
+                                   name="businessName" 
+                                   id="businessName"
+                                   required 
+                                   autocomplete="organization" 
+                                   title="Enter your business or organization name"
+                                   class="form-input">
+                        </label>
+                        
+                        <label class="form-label">
+                            Business Description
+                            <textarea name="businessDescription" 
+                                      id="businessDescription"
+                                      title="Describe your business or organization"
+                                      class="form-textarea"
+                                      rows="4"
+                                      placeholder="Describe your business activities, products, or services..."></textarea>
+                        </label>
+                    </fieldset>
+
+                    
+                    <fieldset class="form-fieldset">
+                        <legend>Membership Level *</legend>
+                        
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" 
+                                       name="membershipLevel" 
+                                       value="np" 
+                                       required 
+                                       class="radio-input">
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">
+                                    <strong>NP Membership</strong>
+                                    <span class="radio-description">For non-profit organizations - No Fee</span>
+                                </span>
+                            </label>
+                            
+                            <label class="radio-label">
+                                <input type="radio" 
+                                       name="membershipLevel" 
+                                       value="bronze" 
+                                       required 
+                                       class="radio-input">
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">
+                                    <strong>Bronze Membership</strong>
+                                    <span class="radio-description">Essential business benefits - GHC2,000/year</span>
+                                </span>
+                            </label>
+                            
+                            <label class="radio-label">
+                                <input type="radio" 
+                                       name="membershipLevel" 
+                                       value="silver" 
+                                       required 
+                                       class="radio-input">
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">
+                                    <strong>Silver Membership</strong>
+                                    <span class="radio-description">Enhanced visibility and opportunities - GHC4,000/year</span>
+                                </span>
+                            </label>
+                            
+                            <label class="radio-label">
+                                <input type="radio" 
+                                       name="membershipLevel" 
+                                       value="gold" 
+                                       required 
+                                       class="radio-input">
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">
+                                    <strong>Gold Membership</strong>
+                                    <span class="radio-description">Maximum exposure and influence - GHC6,000/year</span>
+                                </span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+            </section>
+
+           
+            <section class="membership-cards-section">
+                <h2>Membership Levels</h2>
+                <div class="membership-cards" id="membership-cards">
+                
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+    <div id="modal-container">
+      
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>245 Beach Drive</p>
+                    <p>Accra, Ghana</p>
+                    <p>Phone: (054) 204-3829</p>
+                    <p>Email: info@accrachamber.org</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="join.html">Join Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Accra Chamber of Commerce | Prince Amexo | WDD 231</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
+
+
+

@@ -487,3 +487,4 @@ function showFormError(message) {
         errorDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 }
+

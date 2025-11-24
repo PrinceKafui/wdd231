@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Plan - Spark and Shine Ghana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 - Final project website planning document.">
+    <meta name="author" content="Prince Amexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        :root {
+            --primary-color: #2E86AB; /* Professional blue */
+            --secondary-color: #F5B700; /* Bright yellow for accents */
+            --accent-color: #1A535C; /* Dark teal for text */
+            --background-color: #F7F9FC; /* Light background */
+            --text-color: #333333; /* Dark gray for body text */
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--accent-color);
+            font-family: 'Arial', sans-serif;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        .color-scheme {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .color-box {
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .primary-color {
+            background-color: var(--primary-color);
+        }
+        
+        .secondary-color {
+            background-color: var(--secondary-color);
+            color: var(--accent-color);
+        }
+        
+        .accent-color {
+            background-color: var(--accent-color);
+        }
+        
+        .wireframe {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .wireframe-box {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5px;
+        }
+        
+        .wireframe-item {
+            background-color: #f0f0f0;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 3px;
+        }
+        
+        .scenario {
+            background-color: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 3px;
+        }
+        
+        footer {
+            background-color: var(--accent-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .wireframe {
+                flex-direction: row;
+            }
+            
+            .wireframe-box {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Spark and Shine Ghana</h1>
+        <p>Website Planning Document</p>
+    </header>
+    
+    <div class="container">
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Spark and Shine Ghana</strong></p>
+            <p>This name was selected because it effectively communicates the company's purpose - to make spaces "spark and shine" through professional cleaning services. The inclusion of "Ghana" establishes the company's location and market focus in Accra, Ghana.</p>
+           
+        </section>
+        
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The Spark and Shine Ghana website will serve as the primary digital presence for the company, designed to:</p>
+            <ul>
+                <li>Showcase professional cleaning services for homes, offices, and organizations in Accra</li>
+                <li>Display transparent pricing information to help potential customers make informed decisions</li>
+                <li>Build trust through testimonials, company information, and professional presentation</li>
+                <li>Generate leads through an easy-to-use booking/contact form</li>
+                <li>Provide essential contact information and company details</li>
+            </ul>
+        </section>
+        
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <p>These scenarios represent questions from potential customers that the website should address:</p>
+            
+            <div class="scenario">
+                <h3>Scenario 1: Homeowner seeking regular cleaning service</h3>
+                <p><strong>Visitor Question:</strong> "I live in Accra and need regular home cleaning services. What services do you offer for residential cleaning, how much do they cost, and how can I schedule an appointment?"</p>
+                <p><strong>Website Content to address this:</strong> Clear service descriptions, transparent pricing table, easy booking form with scheduling options.</p>
+            </div>
+            
+            <div class="scenario">
+                <h3>Scenario 2: Office manager looking for commercial cleaning</h3>
+                <p><strong>Visitor Question:</strong> "Our office in Accra needs professional cleaning services. Are you reliable, do you have experience with commercial spaces, and can you provide references?"</p>
+                <p><strong>Website Content to address this:</strong> Company background, testimonials from other businesses, portfolio of commercial projects, professional certifications if any.</p>
+            </div>
+        </section>
+        
+        <section id="color-scheme">
+            <h2>Color Scheme</h2>
+            <p>The selected color scheme reflects professionalism while incorporating bright, clean elements that represent the company's services:</p>
+            
+            <div class="color-scheme">
+                <div class="color-box primary-color">
+                    Primary Color<br>#2E86AB
+                </div>
+                <div class="color-box secondary-color">
+                    Secondary Color<br>#F5B700
+                </div>
+                <div class="color-box accent-color">
+                    Accent Color<br>#1A535C
+                </div>
+            </div>
+            
+            <p><strong>Color Application:</strong></p>
+            <ul>
+                <li><strong>Primary Color (#2E86AB):</strong> Used for headers, navigation, primary buttons, and key accents throughout the site</li>
+                <li><strong>Secondary Color (#F5B700):</strong> Used for call-to-action elements, highlights, and important notices</li>
+                <li><strong>Accent Color (#1A535C):</strong> Used for footer, section headings, and secondary text elements</li>
+                <li><strong>Background Color (#F7F9FC):</strong> Light background for clean, airy feel</li>
+                <li><strong>Text Color (#333333):</strong> Standard dark gray for body text for optimal readability</li>
+            </ul>
+        </section>
+        
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>The typography selection focuses on readability and professional appearance:</p>
+            
+            <ul>
+                <li><strong>Headings (h1, h2, h3):</strong> Arial, sans-serif - Clean, professional, and widely supported</li>
+                <li><strong>Body Text:</strong> 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif - Highly readable on screens with professional appearance</li>
+            </ul>
+            
+            <p>This limited font selection ensures fast loading times while maintaining visual hierarchy and professional appearance.</p>
+        </section>
+        
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <p>Basic layout concepts for the home page across different device sizes:</p>
+            
+            <div class="wireframe">
+                <div class="wireframe-box">
+                    <h3>Mobile View</h3>
+                    <div class="wireframe-item" style="background-color: var(--primary-color); color: white;">Logo & Navigation (Hamburger Menu)</div>
+                    <div class="wireframe-item" style="background-color: var(--secondary-color);">Hero Section with Call-to-Action</div>
+                    <div class="wireframe-item">Services Overview</div>
+                    <div class="wireframe-item">Why Choose Us</div>
+                    <div class="wireframe-item">Testimonials</div>
+                    <div class="wireframe-item" style="background-color: var(--accent-color); color: white;">Quick Booking Form</div>
+                    <div class="wireframe-item" style="background-color: var(--accent-color); color: white;">Footer with Contact Info</div>
+                </div>
+                
+                <div class="wireframe-box">
+                    <h3>Desktop/Tablet View</h3>
+                    <div class="wireframe-item" style="background-color: var(--primary-color); color: white;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>Logo</div>
+                            <div>Navigation Menu</div>
+                        </div>
+                    </div>
+                    <div class="wireframe-item" style="background-color: var(--secondary-color); height: 300px;">
+                        Hero Section with Call-to-Action
+                    </div>
+                    <div style="display: flex;">
+                        <div class="wireframe-item" style="flex: 1;">Services Overview</div>
+                        <div class="wireframe-item" style="flex: 1;">Why Choose Us</div>
+                    </div>
+                    <div class="wireframe-item">Testimonials (Carousel)</div>
+                    <div class="wireframe-item" style="background-color: var(--accent-color); color: white;">
+                        Quick Booking Form
+                    </div>
+                    <div class="wireframe-item" style="background-color: var(--accent-color); color: white;">
+                        Footer with Contact Info & Social Links
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Spark and Shine Ghana Website Plan |  Prince Amexo</p>
+    </footer>
+</body>
+</html>

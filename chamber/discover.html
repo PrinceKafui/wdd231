@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discover Accra - Chamber of Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the beautiful attractions and landmarks in Accra, Ghana">
+    <meta name="author" content="Prince Amexo">
+    <meta property="og:title" content="Discover Accra - Chamber of Commerce">
+    <meta property="og:description" content="Explore the best attractions and landmarks in Accra, Ghana">
+    <meta property="og:image" content="https://placehold.co/1200x630/1a365d/white?text=Discover+Accra">
+    <meta property="og:url" content="https://princekafui.github.io/wdd231/chamber/discover.html">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalizech.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
+    <script src="scripts/attractions.mjs"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="white" stroke-width="4"/>
+                    <path d="M12 20 L18 14 L28 26 L22 32 L12 20Z" fill="#3498db"/>
+                    <circle cx="20" cy="20" r="6" fill="#e74c3c"/>
+                </svg>
+                <a href="index.html"><h1>Chamber of Commerce</h1></a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Navigation menu">☰</button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1 class="page-title">Discover Accra</h1>
+        <p class="page-subtitle">Explore the vibrant culture, history, and attractions of Ghana's capital city</p>
+        
+        <!-- Visitor Message -->
+        <div id="visitor-message" class="visitor-message"></div>
+        
+        <!-- Discover Gallery -->
+        <section class="discover-gallery">
+            <div id="gallery-container" class="gallery-grid">
+                <div class="loading">Loading attractions...</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>245 Beach Drive</p>
+                    <p>Accra, Ghana</p>
+                    <p>Phone: (054) 204-3829</p>
+                    <p>Email: info@accrachamber.org</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="join.html">Join Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Accra Chamber of Commerce | Prince Amexo | WDD 231</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

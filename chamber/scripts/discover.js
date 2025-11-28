@@ -6,62 +6,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentYear = document.getElementById('current-year');
     const lastModified = document.getElementById('last-modified');
     
-    // Initialize all functionality
-    initializeHamburgerMenu();
-    setFooterDates();
-    displayVisitorMessage();
-    generateAttractionCards();
-
-    // Hamburger menu functionality
-    function initializeHamburgerMenu() {
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
+   // Hamburger menu functionality
+function initializeHamburgerMenu() {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent event from bubbling up
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            
+            // Update aria-expanded attribute for accessibility
+            const isExpanded = navMenu.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', isExpanded);
+            
+            // Change hamburger icon
+            if (isExpanded) {
+                hamburger.innerHTML = '✕';
+            } else {
+                hamburger.innerHTML = '☰';
+            }
+        });
         
-        if (hamburger && navMenu) {
-            hamburger.addEventListener('click', function(event) {
-                event.stopPropagation(); // Prevent event from bubbling up
-                navMenu.classList.toggle('active');
-                hamburger.classList.toggle('active');
-                
-                // Update aria-expanded attribute for accessibility
-                const isExpanded = navMenu.classList.contains('active');
-                hamburger.setAttribute('aria-expanded', isExpanded);
-                
-                // Change hamburger icon
-                if (isExpanded) {
-                    hamburger.innerHTML = '✕';
-                } else {
-                    hamburger.innerHTML = '☰';
-                }
+        // Close menu when clicking on a link
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                hamburger.innerHTML = '☰';
             });
-            
-            // Close menu when clicking on a link
-            const navLinks = navMenu.querySelectorAll('a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    navMenu.classList.remove('active');
-                    hamburger.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    hamburger.innerHTML = '☰';
-                });
-            });
-            
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active');
-                    hamburger.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    hamburger.innerHTML = '☰';
-                }
-            });
-            
-            // Prevent menu from closing when clicking inside the menu
-            navMenu.addEventListener('click', function(event) {
-                event.stopPropagation();
-            });
-        }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                hamburger.innerHTML = '☰';
+            }
+        });
+        
+        // Prevent menu from closing when clicking inside the menu
+        navMenu.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
     }
+}
 
     // Set current year and last modified date
     function setFooterDates() {

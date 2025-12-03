@@ -6,56 +6,60 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentYear = document.getElementById('current-year');
     const lastModified = document.getElementById('last-modified');
     
-   // Hamburger menu functionality
-function initializeHamburgerMenu() {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
+    // Initialize all functions
+    initializeHamburgerMenu();
+    setFooterDates();
+    displayVisitorMessage();
+    generateAttractionCards();
     
-    if (hamburger && navMenu) {
-        hamburger.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent event from bubbling up
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-            
-            // Update aria-expanded attribute for accessibility
-            const isExpanded = navMenu.classList.contains('active');
-            hamburger.setAttribute('aria-expanded', isExpanded);
-            
-            // Change hamburger icon
-            if (isExpanded) {
-                hamburger.innerHTML = '✕';
-            } else {
-                hamburger.innerHTML = '☰';
-            }
-        });
+    // Hamburger menu functionality
+    function initializeHamburgerMenu() {
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
         
-        // Close menu when clicking on a link
-        const navLinks = navMenu.querySelectorAll('a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
-                hamburger.innerHTML = '☰';
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', function(event) {
+                event.stopPropagation();
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+                
+                const isExpanded = navMenu.classList.contains('active');
+                hamburger.setAttribute('aria-expanded', isExpanded);
+                
+                if (isExpanded) {
+                    hamburger.innerHTML = '✕';
+                } else {
+                    hamburger.innerHTML = '☰';
+                }
             });
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            if (navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
-                hamburger.innerHTML = '☰';
-            }
-        });
-        
-        // Prevent menu from closing when clicking inside the menu
-        navMenu.addEventListener('click', function(event) {
-            event.stopPropagation();
-        });
+            
+            // Close menu when clicking on a link
+            const navLinks = navMenu.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    hamburger.innerHTML = '☰';
+                });
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    hamburger.innerHTML = '☰';
+                }
+            });
+            
+            // Prevent menu from closing when clicking inside the menu
+            navMenu.addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+        }
     }
-}
 
     // Set current year and last modified date
     function setFooterDates() {
@@ -103,6 +107,9 @@ function initializeHamburgerMenu() {
             const card = document.createElement('article');
             card.className = 'card';
             
+            // Check if the image path is correct
+            console.log('Image path:', attraction.image); 
+            
             card.innerHTML = `
                 <figure class="card-image">
                     <img src="${attraction.image}" alt="${attraction.name}" loading="lazy">
@@ -123,4 +130,4 @@ function initializeHamburgerMenu() {
     window.learnMore = function(attractionName) {
         alert(`More information about ${attractionName} will be available soon!`);
     };
-});
+}); 

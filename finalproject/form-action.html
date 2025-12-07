@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Submitted | Spark & Shine Ghana</title>
+      <meta name="description" content="Contact Spark & Shine Ghana for professional cleaning services in Accra. Get quotes, schedule appointments, and learn about our services.">
+    <meta name="author" content="Spark and Shine Ghana">
+    <meta property="og:title" content="Contact Spark & Shine Ghana | Professional Cleaning Services">
+    <meta property="og:description" content="Get in touch with Accra's leading cleaning service provider. Request quotes and schedule appointments.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sparkandshineghana.com/contact.html">
+    <link rel="icon" href="images/sp.jpg" type="image/jpg">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">>
+    <script type="module" src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Spark & Shine Ghana</span>
+                </a>
+            </div>
+        </header>
+
+        <main class="form-action">
+            <div class="success-message">
+                <h1>🎉 Booking Request Submitted!</h1>
+                <p>Thank you for choosing Spark & Shine Ghana. We have received your booking request and will contact you within 24 hours.</p>
+                
+                <div class="booking-summary" id="booking-summary">
+                </div>
+                
+                <div class="next-steps">
+                    <h2>What Happens Next?</h2>
+                    <ol>
+                        <li>Our team will review your request</li>
+                        <li>We'll contact you to confirm details and schedule</li>
+                        <li>You'll receive a confirmation email</li>
+                        <li>Our cleaning team will arrive at the scheduled time</li>
+                    </ol>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="index.html" class="btn btn-primary">Return to Home</a>
+                    <a href="services.html" class="btn btn-outline">View More Services</a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Spark & Shine Ghana |  All rights reserved | WDD231 | Prince Amexo</p>
+                
+            </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Display submitted booking details
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const bookingSummary = document.getElementById('booking-summary');
+            
+            if (urlParams.toString()) {
+                const summaryHTML = `
+                    <h3>Booking Details:</h3>
+                    <ul>
+                        <li><strong>Name:</strong> ${urlParams.get('name') || 'Not provided'}</li>
+                        <li><strong>Email:</strong> ${urlParams.get('email') || 'Not provided'}</li>
+                        <li><strong>Phone:</strong> ${urlParams.get('phone') || 'Not provided'}</li>
+                        <li><strong>Service Type:</strong> ${urlParams.get('service-type') || 'Not specified'}</li>
+                        <li><strong>Preferred Date:</strong> ${urlParams.get('date') || 'Flexible'}</li>
+                        ${urlParams.get('message') ? `<li><strong>Message:</strong> ${urlParams.get('message')}</li>` : ''}
+                    </ul>
+                `;
+                bookingSummary.innerHTML = summaryHTML;
+            }
+            
+            // Update current year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>

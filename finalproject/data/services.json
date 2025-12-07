@@ -1,0 +1,154 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "name": "Residential Cleaning",
+            "description": "Complete home cleaning service including living areas, bedrooms, bathrooms, and kitchen.",
+            "price": 200,
+            "duration": "3-4 hours",
+            "category": "residential",
+            "features": ["Dusting", "Vacuuming", "Mopping", "Bathroom Sanitization"],
+            "popular": true
+        },
+        {
+            "id": 2,
+            "name": "Office Cleaning",
+            "description": "Professional office cleaning to maintain a clean and productive work environment.",
+            "price": 350,
+            "duration": "4-6 hours",
+            "category": "commercial",
+            "features": ["Desk Cleaning", "Floor Care", "Window Cleaning", "Restroom Sanitization"],
+            "popular": true
+        },
+        {
+            "id": 3,
+            "name": "Deep Cleaning",
+            "description": "Intensive cleaning service for thorough sanitization of your entire space.",
+            "price": 450,
+            "duration": "5-7 hours",
+            "category": "residential",
+            "features": ["Behind Appliances", "Inside Cabinets", "Baseboard Cleaning", "Detailed Dusting"],
+            "popular": false
+        },
+        {
+            "id": 4,
+            "name": "Move-In/Move-Out Cleaning",
+            "description": "Complete cleaning service for properties being vacated or prepared for new occupants.",
+            "price": 400,
+            "duration": "4-6 hours",
+            "category": "special",
+            "features": ["Wall Washing", "Appliance Cleaning", "Carpet Cleaning", "Complete Sanitization"],
+            "popular": true
+        },
+        {
+            "id": 5,
+            "name": "Carpet Cleaning",
+            "description": "Professional steam cleaning to remove deep stains and refresh your carpets.",
+            "price": 150,
+            "duration": "2-3 hours",
+            "category": "special",
+            "features": ["Steam Cleaning", "Stain Removal", "Deodorizing", "Drying"],
+            "popular": false
+        },
+        {
+            "id": 6,
+            "name": "Window Cleaning",
+            "description": "Interior and exterior window cleaning for crystal clear views.",
+            "price": 120,
+            "duration": "2-3 hours",
+            "category": "special",
+            "features": ["Interior Windows", "Exterior Windows", "Frame Cleaning", "Streak-Free Finish"],
+            "popular": false
+        },
+        {
+            "id": 7,
+            "name": "Regular Maintenance",
+            "description": "Weekly or bi-weekly cleaning service to keep your space consistently clean.",
+            "price": 180,
+            "duration": "3-4 hours",
+            "category": "residential",
+            "features": ["Regular Dusting", "Floor Care", "Surface Cleaning", "Quick Turnaround"],
+            "popular": true
+        },
+        {
+            "id": 8,
+            "name": "Commercial Deep Clean",
+            "description": "Comprehensive cleaning for commercial establishments.",
+            "price": 600,
+            "duration": "6-8 hours",
+            "category": "commercial",
+            "features": ["High Traffic Areas", "Commercial Equipment", "Restroom Deep Clean", "Floor Polishing"],
+            "popular": false
+        },
+        {
+            "id": 9,
+            "name": "Post-Construction Cleaning",
+            "description": "Specialized cleaning after construction or renovation work.",
+            "price": 500,
+            "duration": "5-7 hours",
+            "category": "special",
+            "features": ["Debris Removal", "Dust Cleanup", "Surface Preparation", "Final Polish"],
+            "popular": true
+        },
+        {
+            "id": 10,
+            "name": "Green Cleaning",
+            "description": "Eco-friendly cleaning using natural, non-toxic products.",
+            "price": 220,
+            "duration": "3-4 hours",
+            "category": "residential",
+            "features": ["Eco-Friendly Products", "Safe for Children", "Pet-Friendly", "Allergy Reduction"],
+            "popular": true
+        },
+        {
+            "id": 11,
+            "name": "Industrial Cleaning",
+            "description": "Specialized cleaning for factories, warehouses, and industrial spaces.",
+            "price": 800,
+            "duration": "8-10 hours",
+            "category": "commercial",
+            "features": ["Heavy Duty Equipment", "Industrial Standards", "Safety Compliance", "Large Area Coverage"],
+            "popular": false
+        },
+        {
+            "id": 12,
+            "name": "Upholstery Cleaning",
+            "description": "Professional cleaning for sofas, chairs, and other upholstered furniture.",
+            "price": 180,
+            "duration": "2-3 hours",
+            "category": "special",
+            "features": ["Fabric Protection", "Stain Removal", "Odor Elimination", "Quick Drying"],
+            "popular": false
+        },
+        {
+            "id": 13,
+            "name": "Kitchen Deep Clean",
+            "description": "Intensive kitchen cleaning including appliances and hard-to-reach areas.",
+            "price": 250,
+            "duration": "3-4 hours",
+            "category": "residential",
+            "features": ["Appliance Cleaning", "Cabinet Interior", "Vent Hood", "Backsplash Scrubbing"],
+            "popular": true
+        },
+        {
+            "id": 14,
+            "name": "Bathroom Deep Clean",
+            "description": "Complete bathroom sanitization and cleaning service.",
+            "price": 150,
+            "duration": "2-3 hours",
+            "category": "residential",
+            "features": ["Grout Cleaning", "Tile Scrubbing", "Fixture Polishing", "Mold Prevention"],
+            "popular": true
+        },
+        {
+            "id": 15,
+            "name": "Event Cleaning",
+            "description": "Pre and post-event cleaning services for venues and party spaces.",
+            "price": 300,
+            "duration": "4-5 hours",
+            "category": "commercial",
+            "features": ["Quick Setup", "Post-Event Cleanup", "Waste Removal", "Venue Preparation"],
+            "popular": true
+        }
+    ]
+}
